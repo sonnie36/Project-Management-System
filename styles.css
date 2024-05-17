@@ -17,3 +17,20 @@
     box-shadow: 0px 0px 4px 10px rgba(0,0,0,0.1);
     padding:0px 15px;
 }
+.listsProjects{
+    max-width:80%;
+    height:auto;
+    margin: 0 auto;
+    background-color: white;
+}
+.event{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}

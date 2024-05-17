@@ -17,16 +17,32 @@ addProject.addEventListener('click', () => {
 });
 
 const displayProjects = (projectName) => {
-    const projectDiv = document.createElement('div');
+    const projectDiv = document.createElement('div'); 
+    projectDiv.classList.add('container');
+
     const projectP = document.createElement('p');
     projectP.textContent = projectName;
     projectP.classList.add('name');
 
+    const events = document.createElement('div')
+    events.classList.add('event')
+    
     const check = document.createElement('input');
     check.type = 'checkbox';
 
+
+    const deleteBtn = document.createElement('button');
+    deleteBtn.textContent = "delete";
+    deleteBtn.addEventListener('click', function() {
+        this.parentElement.remove();
+        allProjects = allProjects.filter(project => project !== projectName);
+        localStorage.setItem('projects', JSON.stringify(allProjects));
+    });
+
     projectDiv.appendChild(projectP);
-    projectDiv.appendChild(check);
+    events.appendChild(check)
+    events.appendChild(deleteBtn)
+    projectDiv.appendChild(events); 
     projectField.appendChild(projectDiv);
 };
 
