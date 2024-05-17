@@ -2,6 +2,7 @@ const addProject = document.querySelector('.addBtn');
 const projectInput = document.querySelector('.projectInput');
 const projectField = document.querySelector('.projectField');
 
+
 let allProjects = JSON.parse(localStorage.getItem('projects')) || [];
 
 addProject.addEventListener('click', () => {
@@ -32,6 +33,7 @@ const displayProjects = (projectName) => {
 
 
     const deleteBtn = document.createElement('button');
+    deleteBtn.classList.add('delete')
     deleteBtn.textContent = "delete";
     deleteBtn.addEventListener('click', function() {
         this.parentElement.remove();

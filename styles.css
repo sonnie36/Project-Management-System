@@ -17,20 +17,61 @@
     box-shadow: 0px 0px 4px 10px rgba(0,0,0,0.1);
     padding:0px 15px;
 }
-.listsProjects{
-    max-width:80%;
+/* .listsProjects{
+    width:80%;
     height:auto;
-    margin: 0 auto;
+    margin-left:100px;
+    margin-right: 100px;
     background-color: white;
+} */
+.allBtn{
+    background-color: magenta;
+    border: none;
+    outline:none;
+    padding:10px 20px;
+    margin-top: 20px;
+    margin-left:20px;
+    color:white;
+    border-radius:5px;
+    font-size: 18px;
+
 }
-.event{
+.addBtn{
+    background-color: magenta;
+    border: none;
+    outline:none;
+    padding:10px 20px;
+    color:white;
+    border-radius:5px;
+    font-size: 18px;
+}
+.delete{
+    background-color: magenta;
+    border: none;
+    outline:none;
+    padding:10px 20px;
+    color:white;
+    border-radius: 5px;
+}
+.projectField{
+    /* width:80%; */
+    height:auto;
+    margin:0 auto;
+    /* margin-left:100px;
+    margin-right: 100px; */
+    background-color: white;
+    margin-top: 20px;
+}
+.event {
     display: flex;
-    align-items: center;
-    justify-content: space-between;
+    gap:10px;
+    
 }
 .container{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding:15px;
+    border-bottom: 1px solid rgb(190, 187, 187);
 
 }
