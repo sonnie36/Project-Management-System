@@ -48,6 +48,19 @@ const displayProjects = (projectName) => {
     projectField.appendChild(projectDiv);
 };
 
+const allBtn = document.querySelector('.allBtn');
+allBtn.addEventListener('click',() =>{
+    console.log('hello')
+    allProjects = JSON.parse(localStorage.getItem('projects'))
+    console.log(allProjects)
+    const AllCard = document.createElement('div')
+    AllCard.classList.add('card')
+    const allC = document.getElementsByClassName('all')
+    allC.appendChild(AllCard)
+
+    
+
+})
 
 window.onload = function() {
     for (let project of allProjects) {
